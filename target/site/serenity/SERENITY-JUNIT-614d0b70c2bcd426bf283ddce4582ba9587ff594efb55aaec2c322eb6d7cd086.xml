@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Admin" skipped="0" tests="1" time="2.23" timestamp="2024-03-21 09:47:27"><testcase name="Verify Admin Page"><error message="WebDriver was unable to create a new instance of type class org.openqa.selenium.chrome.ChromeDriver&#13;&#10;WebDriver reported the following message: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 120&#10;Current browser version is 122.0.6261.131 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe &#10;Host info: host: 'DESKTOP-SJ1BRTJ', ip: '192.168.29.172'&#10;Build info: version: '4.14.1', revision: '03f8ede370'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}]}]&#13;&#10;See below for more details." type="net.thucydides.core.webdriver.DriverConfigurationError">WebDriver was unable to create a new instance of type class org.openqa.selenium.chrome.ChromeDriver&#13;
+WebDriver reported the following message: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.131 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-SJ1BRTJ', ip: '192.168.29.172'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}]}]&#13;
+See below for more details.</error><system-err>WebDriver was unable to create a new instance of type class org.openqa.selenium.chrome.ChromeDriver&#13;
+WebDriver reported the following message: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 122.0.6261.131 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-SJ1BRTJ', ip: '192.168.29.172'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}]}]&#13;
+See below for more details.&#13;
+net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:152)&#13;
+net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:178)&#13;
+net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:169)&#13;
+net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:120)&#13;
+net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:209)&#13;
+starter.stepdefinitions.MyGoogleSearch.user_on_orange_hrm_login_page(MyGoogleSearch.java:30)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:56)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:332)&#13;
+io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:53)&#13;
+org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+</system-err></testcase></testsuite>

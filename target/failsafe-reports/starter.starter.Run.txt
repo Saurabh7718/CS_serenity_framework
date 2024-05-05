@@ -1,0 +1,45 @@
+-------------------------------------------------------------------------------
+Test set: starter.starter.Run
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.248 s <<< FAILURE! -- in starter.starter.Run
+User Login.Successful Login -- Time elapsed: 1.514 s <<< ERROR!
+net.serenitybdd.core.exceptions.StepInitialisationException: Failed to create step library for DemoLoginPage:Cannot invoke "Object.getClass()" because "object" is null
+	at net.thucydides.core.steps.StepFactory.getNewStepLibraryFor(StepFactory.java:132)
+	at net.thucydides.core.steps.IndividualInstancesByDefaultStepCreationStrategy.initiateStepsFor(IndividualInstancesByDefaultStepCreationStrategy.java:16)
+	at net.thucydides.core.steps.StepAnnotations.instantiateAnyUnitiaializedSteps(StepAnnotations.java:89)
+	at net.thucydides.core.steps.StepAnnotations.instanciateScenarioStepFields(StepAnnotations.java:70)
+	at net.thucydides.core.steps.StepAnnotations.injectScenarioStepsInto(StepAnnotations.java:52)
+	at net.serenitybdd.core.Serenity.injectScenarioStepsInto(Serenity.java:147)
+	at net.serenitybdd.core.Serenity.initializeWithNoStepListener(Serenity.java:115)
+	at cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:74)
+	at cucumber.runtime.SerenityObjectFactory.cacheNewInstance(SerenityObjectFactory.java:57)
+	at cucumber.runtime.SerenityObjectFactory.getInstance(SerenityObjectFactory.java:47)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:332)
+	at io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:53)
+	at io.cucumber.junit.CucumberSerenityBaseRunner$RunCucumber.evaluate(CucumberSerenityBaseRunner.java:363)
+Caused by: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "object" is null
+	at net.serenitybdd.screenplay.injectors.WebCapableActorInjector.injectDependenciesInto(WebCapableActorInjector.java:27)
+	at net.thucydides.core.steps.StepFactory.injectOtherDependenciesInto(StepFactory.java:208)
+	at net.thucydides.core.steps.StepFactory.instantiateNewStepLibraryFor(StepFactory.java:198)
+	at net.thucydides.core.steps.StepFactory.instantiateNewStepLibraryFor(StepFactory.java:179)
+	at net.thucydides.core.steps.StepFactory.getNewStepLibraryFor(StepFactory.java:126)
+	... 30 more
+
