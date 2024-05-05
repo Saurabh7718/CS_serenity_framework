@@ -4,14 +4,16 @@ import Pages.DemoLoginPage;
 import io.cucumber.java.en.*;
 import net.serenitybdd.annotations.Steps;
 import net.serenitybdd.core.Serenity;
+import net.serenitybdd.core.pages.PageObject;
 
-public class DemoLoginStepDefinitions {
+public class DemoLoginStepDefinitions extends PageObject {
 	@Steps
     DemoLoginPage demoLoginPage;
 
     @Given("User is on the login page")
     public void user_is_on_the_login_page() {
-        demoLoginPage.open();
+    	getDriver().get("https://demo.automationtesting.in/Index.html");
+       // demoLoginPage.open();
     }
 
     @When("User enters valid credentials")

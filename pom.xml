@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>Practice_serenity_cucumber_bdd</groupId>
-  <artifactId>Practice_serenity_cucumber_bdd</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+	<groupId>Practice_serenity_cucumber_bdd</groupId>
+	<artifactId>Practice_serenity_cucumber_bdd</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 
-  <name>Practice_serenity_cucumber_bdd</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+	<name>Practice_serenity_cucumber_bdd</name>
+	<!-- FIXME change it to the project's website -->
+	<url>http://www.example.com</url>
 
-  <properties>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<serenity.version>4.0.19</serenity.version>
 		<junit-vintage-engine.version>5.10.0</junit-vintage-engine.version>
@@ -100,7 +101,7 @@
 			<version>4.0.19</version>
 			<scope>test</scope>
 		</dependency>
-		 
+
 
 	</dependencies>
 	<build>
@@ -110,7 +111,11 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.1.2</version>
 				<configuration>
-					<skip>true</skip>
+					<skip>false</skip>
+					<includes>
+						<include>**/*Run.java</include> <!-- Include all test
+						classes -->
+					</includes>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -123,7 +128,7 @@
 						<include>**/Test*.java</include>
 						<include>**/*TestSuite.java</include>
 						<include>**/When*.java</include>
-						
+
 					</includes>
 					<systemPropertyVariables>
 						<webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
