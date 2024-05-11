@@ -7,8 +7,8 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-    plugin = {"pretty"},
-    features = "C:\\Users\\Lenovo\\eclipse-workspace\\X_Practice_serenity_cucumber_bdd\\src\\test\\resource\\features",
+		plugin =    {"pretty"},
+		features = "C:\\Users\\Lenovo\\eclipse-workspace\\X_Practice_serenity_cucumber_bdd\\src\\test\\resource\\features",
     glue = "starter.stepdefinitions", // Check this package path
     dryRun = false,
     monochrome =  true,

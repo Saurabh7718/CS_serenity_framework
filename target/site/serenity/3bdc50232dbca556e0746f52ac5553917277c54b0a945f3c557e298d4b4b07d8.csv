@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"HomeElements","Check radio button","SUCCESS","2024-05-09T06:27:20.2221908+05:30[Asia/Calcutta]","0.0","2.03"
+"HomeElements","Check checkbox","SUCCESS","2024-05-09T06:27:29.3077391+05:30[Asia/Calcutta]","0.0","2.01"
+"HomeElements","check dropdown for skills","SUCCESS","2024-05-09T06:27:36.329919+05:30[Asia/Calcutta]","0.0","2.01"
+"HomeElements","select date from dropdown","SUCCESS","2024-05-09T06:27:44.3137097+05:30[Asia/Calcutta]","0.0","1.91"
